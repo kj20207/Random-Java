@@ -19,12 +19,12 @@ public class SortingTest {
 		System.out.println();
 
 		System.out.println("--- Selection Sort ---");
-		Generator.printArray("- Asc: ", selectionSort.sortAscending((randoms.clone())));
-		Generator.printArray("- Dsc: ", selectionSort.sortDescending((randoms.clone())));
+		Generator.printArray("- Asc: ", selectionSort.sortAscendingEqual((randoms.clone())));
+		Generator.printArray("- Dsc: ", selectionSort.sortDescendingEqual((randoms.clone())));
 
 		System.out.println("--- Insertion Sort ---");
-		Generator.printArray("- Asc: ", insertionSort.sortAscending((randoms.clone())));
-		Generator.printArray("- Dsc: ", insertionSort.sortDescending((randoms.clone())));
+		Generator.printArray("- Asc: ", insertionSort.sortAscendingEqual((randoms.clone())));
+		Generator.printArray("- Dsc: ", insertionSort.sortDescendingEqual((randoms.clone())));
 
 
 	}

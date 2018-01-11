@@ -3,7 +3,7 @@ package algorithms.sorting;
 public class SelectionSort <T extends Comparable <T>> extends Sort<T> {
 
 	@Override
-	protected T[] sort(T[] arr, int comparing) {
+	protected T[] sortEqual(T[] arr, int comparing) {
 		for(int i = 0; i < arr.length; i++){
 			int choice = i;
 			
@@ -18,6 +18,12 @@ public class SelectionSort <T extends Comparable <T>> extends Sort<T> {
 			arr[i] = tmp;
 		}
 		return arr;
+	}
+
+	@Override
+	protected T[] sortRange(T[] arr, boolean asc) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

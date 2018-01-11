@@ -58,8 +58,6 @@ public class Generator {
 				a = randomNumber(97, 123, true);
 				s += (char) a;
 			}
-			
-			System.out.println(a);
 		}
 
 		return s;
