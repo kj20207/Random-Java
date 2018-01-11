@@ -21,29 +21,48 @@ public class Generator {
 		if(min == max)
 			return min;
 
-		int random = Generator.rand.nextInt() % max + min;
-		if(pos)
-			return Math.abs(random); 
-		else return random;
+		int random = Generator.rand.nextInt();
+		
+		if(pos){
+			random = Math.abs(random % (max - min)); 
+			return random + min;
+		}
+		
+		if(random > 0)
+			return random + min;
+		else return random - min;
 	}
-	
+
 	public Integer[] randomNumberArray(int min, int max, boolean pos, int size){
 		Integer randomNumbers[] = new Integer[size];
-		
+
 		for(int i = 0; i < size; i++){
 			randomNumbers[i] = new Integer(randomNumber(min, max, pos));
 		}
-		
+
 		return randomNumbers;
 	}
 
-	public String randomString(int length){
-		if(length < 1){
-			return "";
+	public String randomStringAlpha(int length){
+
+		Integer[] random = randomNumberArray(0, 2, true, length);
+		String s = "";
+		for(int i = 0; i < length; i++){
+
+			int a;
+			if(random[i] == 1){
+				a = randomNumber(65, 91, true);
+				s += (char) a;
+			}
+			else{
+				a = randomNumber(97, 123, true);
+				s += (char) a;
+			}
+			
+			System.out.println(a);
 		}
-		else{
-			String random = "";
-			return random;
-		}
+
+		return s;
+
 	}
 }
