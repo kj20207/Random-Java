@@ -15,30 +15,18 @@ public class SortingTest {
 
 		Integer randoms[] = Generator.getInstance().randomNumberArray(1, 100, true, 10);
 
-		printArray("--- Random Array: ", randoms);
+		Generator.printArray("--- Random Array: ", randoms);
 		System.out.println();
 
 		System.out.println("--- Selection Sort ---");
-		printArray("- Asc: ", selectionSort.sortAscending((randoms.clone())));
-		printArray("- Dsc: ", selectionSort.sortDescending((randoms.clone())));
+		Generator.printArray("- Asc: ", selectionSort.sortAscending((randoms.clone())));
+		Generator.printArray("- Dsc: ", selectionSort.sortDescending((randoms.clone())));
 
 		System.out.println("--- Insertion Sort ---");
-		printArray("- Asc: ", insertionSort.sortAscending((randoms.clone())));
-		printArray("- Dsc: ", insertionSort.sortDescending((randoms.clone())));
+		Generator.printArray("- Asc: ", insertionSort.sortAscending((randoms.clone())));
+		Generator.printArray("- Dsc: ", insertionSort.sortDescending((randoms.clone())));
 
 
 	}
-
-	public static void printArray(String header, Integer nums[]){
-		System.out.print(header);
-		for(int i = 0; i < nums.length; i++){
-			if(i > 0){
-				System.out.print(", ");
-			}
-			System.out.print(nums[i]);
-		}
-		System.out.println();
-	}
-
 
 }

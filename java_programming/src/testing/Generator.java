@@ -6,7 +6,7 @@ public class Generator {
 
 	private static Generator generator;
 	private static Random rand;
-
+	
 	public static Generator getInstance(){
 		if(generator == null){
 			generator = new Generator();
@@ -65,4 +65,16 @@ public class Generator {
 		return s;
 
 	}
+	
+	public static void printArray(String header, Integer nums[]){
+		System.out.print(header);
+		for(int i = 0; i < nums.length; i++){
+			if(i > 0){
+				System.out.print(", ");
+			}
+			System.out.print(nums[i]);
+		}
+		System.out.println();
+	}
+	
 }
