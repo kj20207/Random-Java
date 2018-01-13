@@ -27,6 +27,8 @@ public class StringsTest {
 		String palindrome2 = "palindrome";
 		System.out.println("-- Palindrome: " + Palindrome.palindrome(palindrome1));
 		System.out.println("-- Palindrome: " + Palindrome.palindrome(palindrome2));
+		
+		System.out.println("-- Big Number: " + BigNumber.addLargeInteger("333", "444"));
 	}
 	
 }

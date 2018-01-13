@@ -2,19 +2,14 @@ package structures.nodes;
 
 public class SinglyLinkedNode extends Node {
 
-	private SinglyLinkedNode next;
+	private Node next;
 	
 	public SinglyLinkedNode(int value) {
 		super(value);
 		this.next = null;
 	}
 	
-	public SinglyLinkedNode(int value, SinglyLinkedNode next) {
-		super(value);
-		this.next = next;
-	}
-	
-	public void setNext(SinglyLinkedNode next){
+	public void setNext(Node next){
 		this.next = next;
 	}
 	
