@@ -31,7 +31,7 @@ public class TreeNode extends Node {
 		this.parent = parent;
 	}
 	
-	public void setleftChild(TreeNode leftChild){
+	public void setLeftChild(TreeNode leftChild){
 		this.leftChild = leftChild;
 	}
 	

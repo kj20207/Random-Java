@@ -2,7 +2,6 @@ package structures.lists;
 
 import structures.nodes.DoublyLinkedNode;
 import structures.nodes.Node;
-import structures.nodes.SinglyLinkedNode;
 
 public class DoublyLinkedList extends LinkedList {
 
