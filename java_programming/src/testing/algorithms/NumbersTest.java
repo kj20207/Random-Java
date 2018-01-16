@@ -22,6 +22,10 @@ public class NumbersTest {
 		System.out.println(SpecialSeriesSum.specialSeries(5));
 		System.out.println(SpecialSeriesSum.specialSeries(10));
 	
+		
+		System.out.println("--- Sum Terms Nth Row ---");
+		System.out.println(SumTermsNthRow.nthRow(2));
+		System.out.println(SumTermsNthRow.nthRow(4));
 	}
 
 }
