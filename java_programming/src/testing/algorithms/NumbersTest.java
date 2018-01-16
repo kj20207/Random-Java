@@ -16,7 +16,12 @@ public class NumbersTest {
 		System.out.println("--- Fibonacci Dynamic Programming Test ---");
 		for(int i = 0; i < inst; i++){
 			System.out.println("Fib Num " + i + ": " + Fibonacci.fibDynamic(i));
-		}	
+		}
+		
+		System.out.println("--- Special Series Sum ---");
+		System.out.println(SpecialSeriesSum.specialSeries(5));
+		System.out.println(SpecialSeriesSum.specialSeries(10));
+	
 	}
 
 }
